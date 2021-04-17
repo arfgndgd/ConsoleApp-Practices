@@ -2,6 +2,7 @@
 
 namespace OOP1
 {
+    //Encapsulation
     class Program
     {
         static void Main(string[] args)
