@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GenericsIntro
 {
-    class MyList<T>
+    class MyList<T> //Generic Class
     {
         //Generic 
         T[] items;
@@ -28,5 +28,11 @@ namespace GenericsIntro
 
             items[items.Length - 1] = item;
         }
+
+        public int Count
+        {
+            get { return items.Length; }
+        }
+
     }
 }
