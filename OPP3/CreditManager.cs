@@ -10,4 +10,6 @@ namespace OPP3
         void Calculate();
         
     }
+
+    //Interfaceleri birbirinin alternatifi olan ama içerikleri farklı olan senaryolar için kullanırız
 }

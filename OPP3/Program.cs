@@ -23,8 +23,12 @@ namespace OPP3
             CreditManager vehicle = new VehicleCreditManager();
             CreditManager estate = new EstateCreditManager();
 
+            ILoggerService databaseLoggerService = new DatabaseLoggerService();
+            ILoggerService fileLoggerService = new FileLoggerService();
+
             ApplyManager apply = new ApplyManager();
-            apply.Apply(vehicle);
+            //apply.Apply(vehicle, new DatabaseLoggerService()); 
+            apply.Apply(vehicle,databaseLoggerService);
             //hangi kredi türünü verir isek onu gösterir.
 
             List<CreditManager> credits = new List<CreditManager>() { personel,estate};

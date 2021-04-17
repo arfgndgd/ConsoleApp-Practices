@@ -6,9 +6,12 @@ namespace OPP3
 {
     class ApplyManager
     {
-        public void Apply(CreditManager creditManager)
+        //Dependency Injection
+        //Method Injection
+        public void Apply(CreditManager creditManager, ILoggerService loggerService)
         {
             creditManager.Calculate();
+            loggerService.Log();
         }
 
         public void CreditPreInfo(List<CreditManager> credits)
